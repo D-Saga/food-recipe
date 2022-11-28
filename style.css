@@ -1,0 +1,259 @@
+:root {
+    --fs-xl: 48px;
+    --fs-l: 36px;
+    --fs-m: 24px;
+    --fs-s: 18px;
+    --fs-xs: 16px;
+    --fs-xxs: 10px
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', arial;;
+}
+
+.body-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-container {
+    border-bottom: 1px gray solid;
+}
+
+.navigation-container,
+.top-container,
+.footer {
+    color: aliceblue;
+    background-color: #1F2937;
+    padding: 0 15%;
+}
+
+.navigation-container,
+.footer {
+    height: 72px;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-link {
+    margin-left: 20px;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15%;
+    gap: 30px;
+}
+
+.top-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10%;
+    max-width: 50%;
+}
+
+.top-description-header {
+    font-size: var(--fs-xl);
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.top-description-body {
+    font-size: var(--fs-s);
+    color: #E5E7EB;
+}
+
+.sign-up-top {
+    font-size: var(--fs-xs);
+    border: 1px #3882F6 solid;
+}
+
+.top-image-container {
+    height: auto;
+    max-width: 100%;
+}
+
+.top-image {
+    /* min-width: 300px; */
+    max-width: 100%;
+}
+
+.sign-up-top,
+.action-button {
+    background-color: #3882F6;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #F9FAF8;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 5%;
+}
+
+.title {
+    font-size: var(--fs-l);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 5% 0;
+}
+
+.card {
+    border: 2px #1F2937 solid;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.card-image {
+    height: auto;
+    width: 150px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #E5E7EB; 
+    padding: 5% 10%;
+    /* margin: 5% 0; */
+}
+
+.quote {
+    color: #1F2937;
+    font-size: var(--fs-m);
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote-author {
+    color: #1F2937;
+    font-size: var(--fs-s);
+    font-weight: bolder;
+    align-self: flex-end;
+}
+
+.action-container-out {
+    padding: 5% 20%;
+}
+
+.action-container-in{
+    background-color: #3882F6;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #E5E7EB;
+}
+
+.action-left {
+    flex: 2;
+}
+
+.action-header,
+.action-body {
+    margin-bottom: 5px;
+    font-size: var(--fs-s);
+}
+
+.action-header {
+    font-weight: bold;
+}
+
+.action-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-button {
+    font-size: var(--fs-xs);
+    border: 1px #E5E7EB solid;
+}
+
+ul,
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: var(--fs-xs);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:950px) {
+    :root {
+        --fs-xl: 36px;
+        --fs-l: 30px;
+        --fs-m: 18px;
+        --fs-s: 16px;
+        --fs-xs: 14px;
+        --fs-xxs: 10px;
+    }
+    .navigation-container {
+        height: 50px;
+        padding: 0 5%;
+    }
+    .top-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 5%;
+        gap: 20px;
+    }
+    .top-description {
+        max-width: 100%;
+    }
+    .top-description-header {
+        margin-bottom: 3%;
+    }
+    
+    .top-description-body {
+        margin-bottom: 5%;
+    }
+    .sign-up-top {
+        padding: 5px 10px;
+    }
+
+    .quote-container {
+        gap: 10px;
+    }
+    .action-container-out {
+        padding: 5% 5%;
+    }
+    .action-button {
+        padding: 5px 10px;
+    }
+
+}
